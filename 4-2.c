@@ -3,7 +3,7 @@
 int main()
 {
 	char name[40];
-	printf("ÇëÊäÈëÃû×Ö£º");
+	printf("please enter your name");
 	scanf("%s", name);
 	printf("\"%s\"\n", name);
 	printf("\"%+20s\"\n", name);
