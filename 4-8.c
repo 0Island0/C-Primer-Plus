@@ -4,11 +4,11 @@
 int main()
 {
 	float miles, oil;
-	float meters, letters;
-	printf("ÇëÊäÈëÂÃĞĞµÄÀï³Ì£¨Ó¢Àï£©ºÍÏûºÄµÄÆûÓÍÁ¿£¨¼ÓÂØ£©£º");
+	float meters, litres;
+	printf("è¯·è¾“å…¥æ—…è¡Œçš„é‡Œç¨‹ï¼ˆè‹±é‡Œï¼‰å’Œæ¶ˆè€—çš„æ±½æ²¹é‡ï¼ˆåŠ ä»‘ï¼‰ï¼š");
 	scanf("%f%f", &miles, &oil);
-	letters = oil * M1;
+	litres = oil * M1;
 	meters = miles * M2;
-	printf("%.1fÓ¢Àï/¼ÓÂØ=%.1fÉı/100¹«Àï", miles / oil, letters / meters / 100);
+	printf("%.1fè‹±é‡Œ/åŠ ä»‘=%.1få‡/100å…¬é‡Œ", miles / oil, litres / meters / 100);
 	return 0;
 }
