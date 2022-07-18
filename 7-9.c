@@ -23,12 +23,39 @@ int isprime(int num)
 	}
 	if (a == 0) 
 	{
-		printf("%d是素数\n", num);
+		printf("%d脢脟脣脴脢媒\n", num);
 	}
 	else 
 	{
-		//printf("%d不是素数\n", num);
+		//printf("%d虏禄脢脟脣脴脢媒\n", num);
 	}
 	return 0;
 
+}
+
+
+
+\way two\
+#include<stdio.h>
+int main()
+{
+	int n, i, j, k;
+	printf("enter a number:");
+	while ((scanf("%d", &n) == 1) && n > 0)
+	{
+		for (i = 2; i <= n; i++)
+		{
+			k = 0;
+			for (j = 2; j < i; j++)
+			{
+				if (i % j == 0)
+					k++;
+			}
+			if (k == 0)
+				printf("%5d", i);
+		}
+		
+	}
+
+	return 0;
 }
