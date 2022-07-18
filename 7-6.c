@@ -2,15 +2,18 @@
 int main()
 {
 	char ch,c;
-	int i=0;
+	int a,i=0;
 	while ((ch = getchar()) != '#')
 	{
-		if (ch == 'e')
-			c = ch;
-		if (c == 'e', ch == 'i')
-			i++;
-		c = ' ';
+		switch (ch)
+		{
+			case'e':a = 1; break;
+			case'i':
+				if (a == 1)
+					i++;
+			default:a = 0; 
+		}
 	}
-	printf("%d", i);
+	printf("%d",i);
 	return 0;
 }
